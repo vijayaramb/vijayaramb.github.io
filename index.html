@@ -209,9 +209,9 @@
 
 								<u><h1 class="minor">Education</h1></u>
 								<h3 class="minor">Kalasalingam University</h3>
-								<p>Doctor of Philosophy - Fog and Edge Computing, AI/ML | GPA: NA </p>
+								<p>Doctor of Philosophy - Mobile Edge Computing, AI/ML | Grade: A </p>
 								<h3 class="minor">Pondicherry Engineering College</h3>
-								<p>Master of Technology - Distributed Computing Systems | GPA: 6.9/10 </p>
+								<p>Master of Technology - Distributed Computing Systems | GPA: 6.8/10 </p>
 
 
 								<u><h1 class="minor">Honours and Awards</h1></u>
@@ -965,52 +965,6 @@
 								i = i+1;
 								
 								chosen_response = "He is currently working as a Sr Advanced Software Engineer at Honeywell.";
-
-								// Show the output
-								answerDiv.style.display = 'inline-block';
-
-								answerDiv.innerHTML = chosen_response;
-								output_timeout = setTimeout(function(){ 
-									answerDiv.innerHTML = "";
-								}, chosen_response.length*55);
-							} else if (query.value.toLowerCase().includes("last intern")) {
-								if (i == 0){
-									// Hide output 
-									answerDiv.style.display = 'none';
-									// Hide Assistant Description and show loading dots for the first query
-									document.getElementById("first_assistant_desc").style.display = 'none';
-								} else {
-									// Hide output & clear timeout output from previous iter
-									answerDiv.style.display = 'none';
-									clearTimeout(output_timeout);
-								}
-
-								i = i+1;
-
-								chosen_response = "His last internship was at Qlue Smart City as an AI Engineer Intern.";
-
-								// Show the output
-								answerDiv.style.display = 'inline-block';
-
-								answerDiv.innerHTML = chosen_response;
-								output_timeout = setTimeout(function(){ 
-									answerDiv.innerHTML = "";
-								}, chosen_response.length*55);
-							} else if (query.value.toLowerCase().includes("first intern")) {
-								if (i == 0){
-									// Hide output 
-									answerDiv.style.display = 'none';
-									// Hide Assistant Description and show loading dots for the first query
-									document.getElementById("first_assistant_desc").style.display = 'none';
-								} else {
-									// Hide output & clear timeout output from previous iter
-									answerDiv.style.display = 'none';
-									clearTimeout(output_timeout);
-								}
-
-								i = i+1;
-
-								chosen_response = "His first internship was at Traveloka as a Marketing Technologist Intern.";
 
 								// Show the output
 								answerDiv.style.display = 'inline-block';
