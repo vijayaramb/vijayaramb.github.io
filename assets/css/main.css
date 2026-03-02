@@ -1300,17 +1300,38 @@ input, select, textarea {
 				display: none;
 			}
 
-		#header .logo {
-			width: 5.5rem;
-			height: 5.5rem;
-			line-height: 5.5rem;
-			border: solid 1px #ffffff;
-			border-radius: 100%;
+		#header .logo {			
+			display: flex;
+  			align-items: center;
+  			gap: 0.75rem;   /* space between icons */
+			}
+
+		
+		/* Make each anchor a circular button */
+		#header .logo .icon {
+		  display: inline-flex;               /* ensure proper centering */
+		  align-items: center;
+		  justify-content: center;
+		
+		  width: 5.5rem;
+		  height: 5.5rem;
+		  line-height: 5.5rem;                /* keeps your pseudo-element happy */
+		  border: 1px solid #ffffff;
+		  border-radius: 50%;
+		  text-decoration: none;
 		}
 
-			#header .logo .icon:before {
-				font-size: 2rem;
-			}
+		#header .logo .icon:before {
+			font-size: 2rem;
+		}
+		
+		/* Optional hover focus */
+		#header .logo .icon:hover,
+		#header .logo .icon:focus {
+		  border-color: #ddd;
+		  outline: none;
+		}
+
 
 		#header .content {
 			border-style: solid;
@@ -1669,3 +1690,4 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
